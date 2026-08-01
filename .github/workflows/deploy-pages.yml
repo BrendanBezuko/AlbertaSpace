@@ -37,7 +37,9 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          BASE_PATH: /${{ github.event.repository.name }}/
+          # Custom domain (albertaspace.com) is served from site root.
+          # Use /AlbertaSpace/ only if publishing at username.github.io/AlbertaSpace/ with no custom domain.
+          BASE_PATH: /
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
