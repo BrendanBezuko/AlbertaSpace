@@ -10,6 +10,14 @@ npm install
 npm run dev
 ```
 
+## GitHub Pages
+
+Pushes to `main` deploy via [`.github/workflows/deploy-pages.yml`](../.github/workflows/deploy-pages.yml).
+
+In the GitHub repo: **Settings → Pages → Build and deployment → Source: GitHub Actions**.
+
+Site URL (project pages): `https://<user>.github.io/AlbertaSpace/`
+
 ## Stack
 
 - React 19 + TypeScript + Vite

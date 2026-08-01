@@ -54,7 +54,8 @@ function App() {
         <section className="hero-section" aria-label="Introduction">
           <GoabHeroBanner
             heading="Alberta Space Program"
-            backgroundUrl="/hero-alberta-sky.png"
+            backgroundUrl={`${import.meta.env.BASE_URL}hero-alberta-sky.png`}
+
             textColor="#ffffff"
             minHeight="78vh"
             maxContentWidth={CONTENT_WIDTH}
