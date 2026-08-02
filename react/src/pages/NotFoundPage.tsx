@@ -20,8 +20,8 @@ export function NotFoundPage() {
           Page not found
         </GoabText>
         <GoabText tag="p" size="body-l" mt="none" mb="l" maxWidth="60ch">
-          This page drifted out of the trajectory. Return home for Moon-by-2030
-          claims and other satirical navigation.
+          This page drifted off course. Head back home and we&apos;ll get you
+          pointed at the Moon again.
         </GoabText>
         <GoabButton type="primary" onClick={() => navigate('/')}>
           Back to home

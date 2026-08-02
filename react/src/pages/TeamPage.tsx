@@ -4,7 +4,6 @@ import {
   GoabSpacer,
   GoabText,
 } from '@abgov/react-components'
-import { SatireNotice } from '../components/SatireNotice'
 import { CONTENT_WIDTH } from '../constants'
 import { teamMembers } from '../data/team'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'
@@ -20,10 +19,10 @@ export function TeamPage() {
           The crew
         </GoabText>
         <GoabText tag="p" size="body-m" mt="none" mb="l" maxWidth="70ch">
-          Invented people with invented titles, sworn to bigger rockets from 2026
-          and a Moon date in 2030.
+          The people who show up early, stay late, and believe a rocket built
+          in Alberta can reach the Moon. We&apos;re prouder of this crew than
+          of any drawing on the wall.
         </GoabText>
-        <SatireNotice />
 
         <GoabGrid gap="l" minChildWidth="320px">
           {teamMembers.map((member) => (

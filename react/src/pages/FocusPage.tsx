@@ -9,7 +9,6 @@ import {
 } from '@abgov/react-components'
 import type { GoabIconType } from '@abgov/ui-components-common'
 import { useNavigate } from 'react-router-dom'
-import { SatireNotice } from '../components/SatireNotice'
 import { CONTENT_WIDTH } from '../constants'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'
 
@@ -19,18 +18,18 @@ const focusAreas: {
   icon: GoabIconType
 }[] = [
   {
-    title: 'Larger rockets',
-    body: 'From 2026 onward, every vehicle generation must outweigh and out-thrust the last. Scale is the strategy. Subtlety is ballast.',
+    title: 'Bigger rockets, year over year',
+    body: 'From 2026 on, each vehicle grows out of the one before it. Not because bigger is glamorous, but because the Moon is far and small steps are how ordinary people get to extraordinary places.',
     icon: 'rocket',
   },
   {
-    title: 'Lunar arrival 2030',
-    body: 'All roadmaps, memes, and motivational posters point at the same crater. Soft landing preferred. Hard confidence mandatory.',
+    title: 'The Moon by 2030',
+    body: 'One date, written where the whole crew can see it. It keeps us honest on the days the work is hard and humble on the days it goes well.',
     icon: 'planet',
   },
   {
     title: 'Prairie launch culture',
-    body: 'We will romanticize gravel pads, winter static fires, and coffee that tastes like RP-1. The Moon is far; Alberta mornings are farther.',
+    body: 'Cold mornings, gravel pads, a thermos passed around while the frost burns off. We want kids in small towns to grow up knowing the road to space can start from a field they recognize.',
     icon: 'sunny',
   },
 ]
@@ -46,9 +45,8 @@ export function FocusPage() {
         <GoabText tag="h1" size="heading-l" mt="none" mb="xs">
           Focus areas
         </GoabText>
-        <SatireNotice />
         <GoabText tag="p" size="body-m" mt="none" mb="xl" maxWidth="65ch">
-          Three obsessions. Zero chill. One Moon.
+          Three things we care about, and one place we&apos;re headed.
         </GoabText>
 
         <GoabGrid gap="l" minChildWidth="280px">
@@ -78,7 +76,7 @@ export function FocusPage() {
           trailingIcon="arrow-forward"
           onClick={() => navigate('/roadmap')}
         >
-          See yearly escalation
+          See the year-by-year plan
         </GoabButton>
         <GoabSpacer vSpacing="2xl" />
       </GoabPageBlock>

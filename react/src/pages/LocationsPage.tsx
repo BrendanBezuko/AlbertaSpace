@@ -8,7 +8,6 @@ import {
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { LocationPhoto } from '../components/LocationPhoto'
-import { SatireNotice } from '../components/SatireNotice'
 import { CONTENT_WIDTH } from '../constants'
 import { mapsExternalUrl, programLocations } from '../data/locations'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'
@@ -28,13 +27,13 @@ export function LocationsPage() {
       <GoabPageBlock width={CONTENT_WIDTH}>
         <GoabSpacer vSpacing="2xl" />
         <GoabText tag="h1" size="heading-l" mt="none" mb="xs">
-          Pads, benches &amp; nowhere
+          Our field sites
         </GoabText>
         <GoabText tag="p" size="body-m" mt="none" mb="l" maxWidth="70ch">
-          Fictional field sites where our fictional rockets get louder from 2026
-          onward. Photos are invented. Maps are just geography.
+          The quiet corners of Alberta where we test, listen, and learn. Big
+          sky, honest weather, and room to make some noise without bothering
+          anybody.
         </GoabText>
-        <SatireNotice />
 
         <div className="location-list">
           {programLocations.map((location) => (

@@ -10,7 +10,6 @@ import {
 } from '@abgov/react-components'
 import type { GoabIconType } from '@abgov/ui-components-common'
 import { useNavigate } from 'react-router-dom'
-import { SatireNotice } from '../components/SatireNotice'
 import { CONTENT_WIDTH } from '../constants'
 import { featuredVideos, resourceLinks } from '../data/resources'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'
@@ -31,13 +30,13 @@ export function ResourcesPage() {
       <GoabPageBlock width={CONTENT_WIDTH}>
         <GoabSpacer vSpacing="2xl" />
         <GoabText tag="h1" size="heading-l" mt="none" mb="xs">
-          Real links (not ours)
+          Worth your time
         </GoabText>
-        <SatireNotice />
         <GoabText tag="p" size="body-m" mt="none" mb="m" maxWidth="70ch">
-          Public materials about AlbertaSat, UASTARR / STARR, and related campus
-          coverage. These organizations are independent. For the fuller campus
-          roundup, use Campus scene.
+          Stories and links about AlbertaSat, UASTARR / STARR, and the people
+          already putting Alberta&apos;s name in orbit. They&apos;re independent
+          of us — we just think their work deserves an audience. For the fuller
+          picture, see Campus scene.
         </GoabText>
         <GoabButton
           type="secondary"

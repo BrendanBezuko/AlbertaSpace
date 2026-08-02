@@ -7,7 +7,6 @@ import {
 } from '@abgov/react-components'
 import { Link, useNavigate } from 'react-router-dom'
 import { LocationPhoto } from '../components/LocationPhoto'
-import { SatireNotice } from '../components/SatireNotice'
 import { CONTENT_WIDTH } from '../constants'
 import { formatEventDate, programEvents } from '../data/events'
 import { programLocations } from '../data/locations'
@@ -31,10 +30,9 @@ export function EventsPage() {
           Events on the path to 2030
         </GoabText>
         <GoabText tag="p" size="body-m" mt="none" mb="l" maxWidth="70ch">
-          Fictional pad parties, design reviews, and a Moon watch party scheduled
-          with suspicious confidence.
+          Pad days, design reviews, and — if we do our jobs right — a landing
+          to watch together. Everyone&apos;s welcome. Dress for the wind.
         </GoabText>
-        <SatireNotice />
 
         <div className="event-list">
           {upcoming.map((event) => {
@@ -88,7 +86,7 @@ export function EventsPage() {
 
         <GoabSpacer vSpacing="xl" />
         <GoabButton type="primary" onClick={() => navigate('/contact')}>
-          RSVP to the bit
+          Let us know you&apos;re coming
         </GoabButton>
         <GoabSpacer vSpacing="2xl" />
       </GoabPageBlock>

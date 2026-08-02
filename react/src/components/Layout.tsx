@@ -1,9 +1,4 @@
-import {
-  GoabAppFooter,
-  GoabAppFooterMetaSection,
-  GoabAppFooterNavSection,
-  GoabAppHeader,
-} from '@abgov/react-components'
+import { GoabAppHeader } from '@abgov/react-components'
 import { NavLink, Outlet } from 'react-router-dom'
 import {
   CONTENT_WIDTH,
@@ -69,19 +64,30 @@ export function Layout() {
         <Outlet />
       </main>
 
-      <GoabAppFooter maxContentWidth={CONTENT_WIDTH}>
-        <GoabAppFooterNavSection maxColumnCount={3} heading={ORG_NAME}>
-          {footerNav.map((item) => (
-            <NavLink key={item.to} to={item.to}>
-              {item.label}
-            </NavLink>
-          ))}
-        </GoabAppFooterNavSection>
-        <GoabAppFooterMetaSection>
-          <NavLink to="/campus">Not affiliated with campus teams</NavLink>
-          <a href="mailto:hello@albertaspace.example">Satire contact</a>
-        </GoabAppFooterMetaSection>
-      </GoabAppFooter>
+      <footer className="site-footer">
+        <div
+          className="site-footer__content"
+          style={{ maxWidth: CONTENT_WIDTH }}
+        >
+          <section className="site-footer__nav">
+            <h2 className="site-footer__heading">{ORG_NAME}</h2>
+            <ul className="site-footer__nav-links">
+              {footerNav.map((item) => (
+                <li key={item.to}>
+                  <NavLink to={item.to}>{item.label}</NavLink>
+                </li>
+              ))}
+            </ul>
+          </section>
+          <section className="site-footer__meta">
+            <div className="site-footer__meta-links">
+              <NavLink to="/campus">Not affiliated with campus teams</NavLink>
+              <a href="mailto:hello@albertaspace.example">Say hello</a>
+            </div>
+            <span className="site-footer__brand">Alberta Space Company</span>
+          </section>
+        </div>
+      </footer>
     </div>
   )
 }

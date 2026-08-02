@@ -44,13 +44,13 @@ export const featuredVideos: VideoResource[] = [
   },
 ]
 
-/** Links to real campus / student org materials — not partners of this satirical site. */
+/** Links to campus / student org materials. */
 export const resourceLinks: ResourceLink[] = [
   {
     id: 'albertasat',
     title: 'AlbertaSat',
     description:
-      'Official site for the U of A student/faculty CubeSat group — missions, outreach, and updates. Not affiliated with this site.',
+      'Official site for the U of A student/faculty CubeSat group — missions, outreach, and updates.',
     href: 'https://albertasat.ca/',
     source: 'AlbertaSat',
     kind: 'organization',
@@ -59,7 +59,7 @@ export const resourceLinks: ResourceLink[] = [
     id: 'uastarr',
     title: 'UASTARR / STARR',
     description:
-      'Student Team for Alberta Rocketry Research — sounding rockets, competitions, and STEM outreach. Not affiliated with this site.',
+      'Student Team for Alberta Rocketry Research — sounding rockets, competitions, and STEM outreach.',
     href: 'https://uastarr.ca/',
     source: 'UASTARR',
     kind: 'organization',

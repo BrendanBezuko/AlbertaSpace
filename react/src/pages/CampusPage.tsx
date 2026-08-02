@@ -1,5 +1,4 @@
 import {
-  GoabCallout,
   GoabContainer,
   GoabGrid,
   GoabIcon,
@@ -22,19 +21,15 @@ export function CampusPage() {
       <GoabPageBlock width={CONTENT_WIDTH}>
         <GoabSpacer vSpacing="2xl" />
         <GoabText tag="h1" size="heading-l" mt="none" mb="xs">
-          Real campus teams (not us)
+          The campus teams we look up to
         </GoabText>
         <GoabText tag="p" size="body-m" mt="none" mb="l" maxWidth="70ch">
-          Simple public facts about student groups that actually build hardware.
-          The Alberta Space Program is satirical fiction and is not affiliated with
-          these teams, their universities, or their sponsors.
+          Before anyone dreamed our dream, students at the University of
+          Alberta were already building real hardware and flying it. We&apos;re
+          not affiliated with these teams or their university — we&apos;re
+          fans. Everything below comes from their own public materials, and
+          their websites are the place to go for the full story.
         </GoabText>
-
-        <GoabCallout type="important" heading="No affiliation" mb="xl">
-          Linking to AlbertaSat, UASTARR / STARR, or any campus page does not mean
-          partnership, endorsement, funding, shared branding, or shared mission
-          plans. If you want their truth, use their websites and emails below.
-        </GoabCallout>
 
         {campusGroups.map((group) => (
           <div key={group.id} className="campus-group">

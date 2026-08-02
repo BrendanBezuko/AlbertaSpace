@@ -13,7 +13,6 @@ import {
   GoabText,
 } from '@abgov/react-components'
 import { Link, useNavigate } from 'react-router-dom'
-import { SatireNotice } from '../components/SatireNotice'
 import { CONTENT_WIDTH, ORG_NAME } from '../constants'
 import { formatEventDate, programEvents } from '../data/events'
 import { teamMembers } from '../data/team'
@@ -37,9 +36,10 @@ export function HomePage() {
           minHeight="78vh"
           maxContentWidth={CONTENT_WIDTH}
         >
-          We will reach the Moon by 2030. Full stop. Starting in 2026 we build
-          bigger and bigger rockets — until the prairie sky is just a launch pad
-          with better branding.
+          We&apos;re a small crew of Albertans with one dream: build rockets here
+          at home starting in 2026, and set something we made on the Moon by
+          2030. It&apos;s a long road from a gravel pad to the Sea of
+          Tranquility. We know that. We&apos;re going anyway.
           <GoabHeroBannerActions>
             <GoabButton type="start" onClick={() => navigate('/roadmap')}>
               See the roadmap
@@ -51,15 +51,14 @@ export function HomePage() {
       <section className="section section--mission reveal">
         <GoabPageBlock width={CONTENT_WIDTH}>
           <GoabSpacer vSpacing="2xl" />
-          <SatireNotice />
           <GoabText tag="h2" size="heading-l" mt="none" mb="m">
-            Moon or bust (preferably Moon)
+            Why we&apos;re doing this
           </GoabText>
           <GoabText tag="p" size="body-l" mt="none" mb="xl" maxWidth="72ch">
-            The Alberta Space Program is a satirical private organization with one
-            assignment: put Alberta boots on lunar regolith before the decade ends.
-            We will stack stages, stack budgets (hypothetically), and stack press
-            releases until gravity files a complaint.
+            This province builds things. Grain elevators, pipelines, satellites
+            on a student budget. We figure the next thing Alberta builds can
+            leave the ground. Nobody handed us this job — we just looked up one
+            clear prairie night and decided somebody from here ought to try.
           </GoabText>
 
           <GoabGrid gap="l" minChildWidth="240px">
@@ -71,8 +70,9 @@ export function HomePage() {
                 </GoabText>
               </div>
               <GoabText tag="p" size="body-m" mt="s" mb="m">
-                Year one: something that leaves the pad. Every year after: louder,
-                taller, slightly more unreasonable.
+                Year one: something small and honest that leaves the pad. Every
+                year after: a little bigger, built on what the last one taught
+                us.
               </GoabText>
               <GoabButton
                 type="tertiary"
@@ -91,8 +91,9 @@ export function HomePage() {
                 </GoabText>
               </div>
               <GoabText tag="p" size="body-m" mt="s" mb="m">
-                Soft landing optional. Soft deadlines forbidden. The Moon has been
-                warned.
+                That&apos;s the date we hold onto when the shop is cold and the
+                budget is colder. We know how hard it is. That&apos;s half the
+                point.
               </GoabText>
               <GoabButton
                 type="tertiary"
@@ -111,8 +112,9 @@ export function HomePage() {
                 </GoabText>
               </div>
               <GoabText tag="p" size="body-m" mt="s" mb="m">
-                AlbertaSat and UASTARR do actual hardware. We admire them from a
-                satirical distance — zero affiliation.
+                AlbertaSat flies satellites. UASTARR launches rockets. They got
+                here first and did it right. We&apos;re not affiliated with them
+                — just proud they&apos;re ours.
               </GoabText>
               <GoabButton
                 type="tertiary"
@@ -133,11 +135,11 @@ export function HomePage() {
         <GoabPageBlock width={CONTENT_WIDTH}>
           <GoabSpacer vSpacing="2xl" />
           <GoabText tag="h2" size="heading-l" mt="none" mb="xs">
-            Pad-side calendar
+            Where to find us
           </GoabText>
           <GoabText tag="p" size="body-m" mt="none" mb="xl" maxWidth="65ch">
-            Entirely made-up gatherings for a made-up launch company with excellent
-            confidence and questionable physics.
+            Pad days, design reviews, and long evenings under a sky that makes
+            the whole thing feel possible. Come say hello.
           </GoabText>
           <GoabGrid gap="l" minChildWidth="280px">
             {upcoming.map((event) => (
@@ -174,11 +176,11 @@ export function HomePage() {
         <GoabPageBlock width={CONTENT_WIDTH}>
           <GoabSpacer vSpacing="2xl" />
           <GoabText tag="h2" size="heading-l" mt="none" mb="xs">
-            The crew (fictional)
+            The crew
           </GoabText>
           <GoabText tag="p" size="body-m" mt="none" mb="xl" maxWidth="65ch">
-            Invented humans with invented titles, united by one real belief: 2030 is
-            a Moon year if you say it loud enough.
+            Engineers, farm kids, and stubborn optimists. Different roads here,
+            same belief: Alberta belongs in the sky.
           </GoabText>
           <div className="team-strip">
             {teamMembers.map((member) => (
@@ -203,12 +205,13 @@ export function HomePage() {
           <GoabSpacer vSpacing="2xl" />
           <GoabCallout
             type="information"
-            heading="Meanwhile, on actual campuses…"
+            heading="Students are already doing it"
             mb="none"
           >
-            AlbertaSat flies CubeSats. UASTARR builds sounding rockets. Neither of
-            them asked to be on this website. We link them because they are real —
-            and because our Moon plan could use the contrast.
+            At the University of Alberta, AlbertaSat has put satellites in orbit
+            and UASTARR sends rockets into the high blue. Their work is real and
+            worth your time. If our dream ever comes true, it will be because
+            people like them led the way.
             <GoabSpacer vSpacing="m" />
             <GoabButton type="primary" onClick={() => navigate('/campus')}>
               See real campus teams

@@ -10,7 +10,6 @@ export type ProgramEvent = {
   host: string
 }
 
-/** Entirely fictional satirical events. */
 export const programEvents: ProgramEvent[] = [
   {
     id: '2026-stack-reveal',
@@ -19,46 +18,46 @@ export const programEvents: ProgramEvent[] = [
     time: '7:00 p.m. – 10:00 p.m. MT',
     locationId: 'buffalo-trail',
     venue: 'Buffalo Trail Observation Site (near Oyen)',
-    audience: 'Anyone who can clap on countdown',
+    audience: 'Everyone — families welcome',
     summary:
-      'We unveil the first rocket we claim is “too small to be our last.” Bring earplugs for the rhetoric.',
+      'Our first vehicle, out in the open where the neighbours can see it. It is small, and it is ours. Come meet the crew, kick the tires, and stay for the stars.',
     host: 'Marcus Okello',
   },
   {
     id: 'static-fire-saturday',
-    title: 'Static Fire Saturday (conceptual)',
+    title: 'Static Fire Saturday',
     date: '2026-10-03',
     time: '9:30 a.m. – 4:00 p.m. MT',
     locationId: 'pakowki-quiet',
     venue: 'Pakowki Lake Quiet Zone (near Manyberries)',
-    audience: 'Propulsion fans, photographers of heat haze',
+    audience: 'Anyone who likes engines',
     summary:
-      'A fictional hot-fire day where the only thing guaranteed to ignite is confidence.',
+      'A day at the pad watching an engine do what we built it to do. Hearing protection provided; there will be coffee going all day.',
     host: 'Gordon MacRae',
   },
   {
     id: 'bigger-than-last-year',
-    title: 'Bigger-Than-Last-Year Design Review',
+    title: '2027 Vehicle Design Review',
     date: '2027-01-16',
     time: 'Friday 4:00 p.m. – Sunday noon MT',
     locationId: 'redwillow-range',
     venue: 'Redwillow Range Staging Ground (near Hythe)',
-    audience: 'Structures maximalists',
+    audience: 'Builders and the curious',
     summary:
-      'If your CAD model is shorter than last year’s, you are presenting a stool. Escalation is the only agenda item.',
+      'A weekend of honest engineering: what flew, what failed, and what next year’s vehicle needs to carry. Hard questions encouraged.',
     host: 'Marcus Okello',
   },
   {
     id: 'cislunar-slide-night',
-    title: 'Cislunar Slide Night',
+    title: 'Road to the Moon: Trajectory Night',
     date: '2028-11-07',
     time: '6:00 p.m. – 9:00 p.m. MT',
     locationId: 'edmonton-hub',
-    venue: 'Edmonton Program Hub (fictional downtown venue)',
-    audience: 'Trajectory poets',
+    venue: 'Edmonton Program Hub (downtown)',
+    audience: 'Anyone who wonders how you get there from here',
     summary:
-      'Forty-seven slides about getting to the Moon by 2030. Slide forty-eight is just the word ARRIVE.',
-    host: 'Elise Cardinal',
+      'An evening walking through the path from a prairie pad to the lunar surface, one burn at a time. Plain language, real math, no rush.',
+    host: 'Eli Cardinal',
   },
   {
     id: 'dress-rehearsal-2029',
@@ -67,22 +66,22 @@ export const programEvents: ProgramEvent[] = [
     time: '11:00 a.m. – 4:00 p.m. MT',
     locationId: 'birch-mountains-overlook',
     venue: 'Birch Mountains Overlook (north of Fort McKay)',
-    audience: 'Livestream enjoyers',
+    audience: 'Everyone at home or on the hill',
     summary:
-      'Practice landing commentary for a landing that has not happened yet. Bring your own suspense.',
+      'A full run-through of landing day — comms, telemetry, and commentary — a year before the real thing. Practice is how the dream stays a plan.',
     host: 'Samir Haddad',
   },
   {
     id: 'moon-2030-watch',
     title: 'Moon 2030 Watch Party',
     date: '2030-07-20',
-    time: 'All day MT (allegedly)',
+    time: 'All day MT',
     locationId: 'clearwater-bench',
     venue: 'Clearwater Bench Field Lab (near Nordegg)',
-    audience: 'Everyone who believed the roadmap',
+    audience: 'Everyone who ever wished us well',
     summary:
-      'The big one. Soft landing preferred. Soft commitment unavailable. Flags optional; bold claims mandatory.',
-    host: 'Dr. Priya Nandra',
+      'The big one. If we have done our jobs, this is the day we watch something built in Alberta touch the Moon — together, on the land where it started.',
+    host: 'Preston Nandra',
   },
 ]
 
